@@ -42,10 +42,11 @@ second = make_triangle('5 4 11 6 11 2'.split() or input().split())
 
 print(first)
 print(second)
+print()
 
 for i in range(3):
     for j in range(3):
-        point = find_intersection(first[0][i], first[1][i], first[0][i - 1], first[1][i - 1], second[0][j], second[1][j], second[0][j - 1], second[1][j-1])
+        point = find_intersection(first[0][i], first[1][i], first[0][i - 1], first[1][i - 1], second[0][j], second[1][j], second[0][j - 1], second[1][j - 1])
         if point:
             points.append(point)
 triangles = [first, second]
