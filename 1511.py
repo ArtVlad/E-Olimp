@@ -1,9 +1,3 @@
-def max(number1, number2):
-    return number1 if number1 > number2 else number2
-
-def min(number1, number2):
-    return number1 if number1 < number2 else number2
-
 def cut(length, width, pieces, l):
     print(' ' * l, (length, width, pieces))
     i = 0
