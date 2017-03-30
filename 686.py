@@ -12,7 +12,7 @@ class Array:
     def __str__(self):
         return ' '.join(map(str, self.value.keys()))
 
-    def add(self,i):
+    def add(self, i):
         if self.last_plus:
             num = i
         else:
@@ -20,7 +20,6 @@ class Array:
         self.value[num] = True
         self.last_plus = True
         return self
-
 
     def next(self, i):
         self.last_query = -1
@@ -34,11 +33,11 @@ class Array:
         print(self.last_query)
         return self.last_query
 
-
 S = Array()
-S.add(1)
-S.add(3)
-S.add(3)
-S.next(2)
-S.add(1)
-S.next(4)
+method = {
+    '+': S.add,
+    '?': S.next
+}
+for a in range(int(input())):
+    inp = input().split()
+    method[inp[0]](int(inp[1]))

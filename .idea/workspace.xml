@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a608ab0-9acc-4662-963a-347e54930782" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/686.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1511.py" afterPath="$PROJECT_DIR$/1511.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/42.py" afterPath="$PROJECT_DIR$/42.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/686.py" afterPath="$PROJECT_DIR$/686.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +15,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/E_Olimp$test.coverage" NAME="test Coverage Results" MODIFIED="1490874800738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/E_Olimp$42.coverage" NAME="42 Coverage Results" MODIFIED="1490912800709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/E_Olimp$686.coverage" NAME="686 Coverage Results" MODIFIED="1490915258317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/E_Olimp$686.coverage" NAME="686 Coverage Results" MODIFIED="1490915880627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -45,8 +42,8 @@
       <file leaf-file-name="686.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/686.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+            <state relative-caret-position="88">
+              <caret line="32" column="30" lean-forward="true" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -414,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490868022954</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="686&#10;has class&#10;no input&#10;static result">
+      <created>1490915338750</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1490915338750</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -463,7 +467,8 @@
     <MESSAGE value="42&#10;find_intersection&#10;point_in_triangle (part)" />
     <MESSAGE value="42&#10;find_intersection (# TODO x = const)&#10;point_in_triangle (# TODO point not in triangle)" />
     <MESSAGE value="42&#10;point_in_triangle &#10;all points found (# TODO x = const)" />
-    <option name="LAST_COMMIT_MESSAGE" value="42&#10;point_in_triangle &#10;all points found (# TODO x = const)" />
+    <MESSAGE value="686&#10;has class&#10;no input&#10;static result" />
+    <option name="LAST_COMMIT_MESSAGE" value="686&#10;has class&#10;no input&#10;static result" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -544,8 +549,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/686.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+        <state relative-caret-position="88">
+          <caret line="32" column="30" lean-forward="true" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
           <folding />
         </state>
       </provider>
