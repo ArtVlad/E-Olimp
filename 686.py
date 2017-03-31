@@ -41,3 +41,4 @@ method = {
 for a in range(int(input())):
     inp = input().split()
     method[inp[0]](int(inp[1]))
+

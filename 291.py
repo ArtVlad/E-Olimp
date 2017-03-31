@@ -32,14 +32,14 @@ def unpark(auto):
     car[auto]['owned'] = 0
 
 
-for p in range(n):
-    place[p + 1] = {}
-    place[p + 1]['price'] = int(input())
-    place[p + 1]['owned'] = 0
-for w in range(m):
-    car[w + 1] = {}
-    car[w + 1]['weight'] = int(input())
-    car[w + 1]['parked'] = 0
+for p in range(1, n + 1):
+    place[p] = {}
+    place[p]['price'] = int(input())
+    place[p]['owned'] = 0
+for w in range(1, m + 1):
+    car[w] = {}
+    car[w]['weight'] = int(input())
+    car[w]['parked'] = 0
 for i in range(2 * m):
     auto = int(input())
     if auto > 0:
