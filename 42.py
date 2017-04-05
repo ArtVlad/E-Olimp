@@ -3,6 +3,12 @@ def make_triangle(arr) -> list:
 
 
 def find_intersection(x1, y1, x2, y2, x3, y3, x4, y4):
+    def find():
+        x = -((x1 * y2 - x2 * y1) * (x4 - x3) - (x3 * y4 - x4 * y3) * (x2 - x1)) / (
+        (y1 - y2) * (x4 - x3) - (y3 - y4) * (x2 - x1))
+        y = ((y3 - y4) * -x - (x3 * y4 - x4 * y3)) / (x4 - x3)
+        return x,y
+
     if y2 == y1 and y4 == y3:
         return False
     elif y2 != y1 and y4 != y3:
@@ -15,11 +21,10 @@ def find_intersection(x1, y1, x2, y2, x3, y3, x4, y4):
 
     # TODO x = const
     if x2 == x1 or x4 == x3:
+        print('Not implemented yet!')
         return False
-
-    x = -((x1 * y2 - x2 * y1) * (x4 - x3) - (x3 * y4 - x4 * y3) * (x2 - x1)) / (
-    (y1 - y2) * (x4 - x3) - (y3 - y4) * (x2 - x1))
-    y = ((y3 - y4) * -x - (x3 * y4 - x4 * y3)) / (x4 - x3)
+    else:
+       x,y = find()
     if (x1 <= x <= x2 or x2 <= x <= x1) and (x3 <= x <= x4 or x4 <= x <= x3) and (y1 <= y <= y2 or y2 <= y <= y1) and (
                 y3 <= y <= y4 or y4 <= y <= y3):
         return [x, y]
