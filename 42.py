@@ -5,9 +5,16 @@ def make_triangle(arr) -> list:
 def find_intersection(x1, y1, x2, y2, x3, y3, x4, y4):
     def find():
         x = -((x1 * y2 - x2 * y1) * (x4 - x3) - (x3 * y4 - x4 * y3) * (x2 - x1)) / (
-        (y1 - y2) * (x4 - x3) - (y3 - y4) * (x2 - x1))
+            (y1 - y2) * (x4 - x3) - (y3 - y4) * (x2 - x1))
         y = ((y3 - y4) * -x - (x3 * y4 - x4 * y3)) / (x4 - x3)
-        return x,y
+        return x, y
+
+    def findv(xx1, yy1, xx2, yy2, xx):
+        y = - ((xx1 * yy2 - xx2 * yy1) + (yy1 - yy2) * xx) / (xx2 - xx1)
+        if xx1 <= xx <= xx2 or xx2 <= xx <= xx1:
+            return [xx, y]
+        else:
+            return False
 
     if y2 == y1 and y4 == y3:
         return False
@@ -19,14 +26,14 @@ def find_intersection(x1, y1, x2, y2, x3, y3, x4, y4):
     if x2 == x1 and x4 == x3:
         return False
 
-    # TODO x = const
-    if x2 == x1 or x4 == x3:
-        print('Not implemented yet!')
-        return False
+    elif x1 == x2:
+        return findv(x3, y3, x4, y4, x1)
+    elif x3 == x4:
+        return findv(x1, y1, x2, y2, x3)
     else:
-       x,y = find()
+        x, y = find()
     if (x1 <= x <= x2 or x2 <= x <= x1) and (x3 <= x <= x4 or x4 <= x <= x3) and (y1 <= y <= y2 or y2 <= y <= y1) and (
-                y3 <= y <= y4 or y4 <= y <= y3):
+                        y3 <= y <= y4 or y4 <= y <= y3):
         return [x, y]
     else:
         return False
@@ -45,8 +52,8 @@ def point_in_triangle(point, triangle) -> bool:
 
 has_just_point = False
 points = []
-first = make_triangle(  '2 2  2 6  8 4'.split() or input().split())
-second = make_triangle( '5 4 11 6 11 2'.split() or input().split())
+first = make_triangle( '2 2  2 6  8 4'.split() or '0 2 1 1 2 4'.split() or input().split())
+second = make_triangle('5 4 11 6 11 2'.split() or '2 1 3 3 1 4'.split() or input().split())
 
 print(first)
 print(second)
@@ -64,8 +71,12 @@ for tri in range(2):
         if point_in_triangle([triangles[tri][0][i], triangles[tri][1][i]], triangles[tri - 1]):
             has_just_point = True
             points.append([triangles[tri][0][i], triangles[tri][1][i]])
-if len(points) == 4:
-    print(points)
 
+if len(points) == 4:
     if find_intersection(*points[0], *points[1], *points[2], *points[3]):
-        print('Err',1)
+        points[1], points[2] = points[2], points[1]
+    elif find_intersection(*points[0], *points[3], *points[1], *points[2]):
+        points[1], points[0] = points[0], points[1]
+
+# TODO area
+print(points)
