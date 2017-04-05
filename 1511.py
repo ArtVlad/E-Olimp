@@ -1,7 +1,5 @@
 def cut(length, width, pieces, l):
-    print(' ' * l, (length, width, pieces))
-    i = 0
-    ratio_sides = 0
+    # print(' ' * l, (length, width, pieces))
     result = 0
     if pieces == 1:
         return max(length, width) / min(length, width)
