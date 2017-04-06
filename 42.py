@@ -118,4 +118,4 @@ elif len(points) == 4:
         points[1], points[0] = points[0], points[1]
     S = 0.5 * length(*points[0], *points[2]) * length(*points[1], *points[3]) * find_angle(*points[0], *points[2], *points[1], *points[3])
 # TODO 6 points
-print(len(points), round(S, 2))
+print(len(points), round(S if S > 0 else -S, 2))
