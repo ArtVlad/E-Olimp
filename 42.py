@@ -63,7 +63,7 @@ def point_in_triangle(point, triangle) -> bool:
 
 
 points = []
-first = make_triangle(input().split() or ' 1 -2  1 2 -1 0'.split() or '2 2  2 6  8 4'.split() or '0 2 1 1 2 4'.split())
+first = make_triangle( input().split() or ' 1 -2  1 2 -1 0'.split() or '2 2  2 6  8 4'.split() or '0 2 1 1 2 4'.split())
 second = make_triangle(input().split() or '-1 -2 -1 2  1 0'.split() or '5 4 11 6 11 2'.split() or '2 1 3 3 1 4'.split())
 
 for i in range(3):
