@@ -26,7 +26,7 @@ class Array:
         if i in self.value:
             self.last_query = i
         else:
-            for e in self:
+            for e in self.value:
                 if i <= e and (self.last_query == -1 or e < self.last_query):
                     self.last_query = e
         self.last_plus = False

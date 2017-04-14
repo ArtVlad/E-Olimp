@@ -1,10 +1,7 @@
-from math import sqrt
-
 array = [2]
 count = int(input())
 inputs = [None] * count
 outputs = [None] * count
-isSimple = {}
 
 
 def goIn(number, x):
@@ -41,10 +38,6 @@ for i in range(3, n + 1, 2):
             break
     else:
         array.append(i)
-for i in range(n):
-    for j in array:
-        if j < i and goIn(i, j):
-            isSimple[i] = True
 
 for i in range(count):
     print(getSimple(inputs[i][0], inputs[i][1]))
